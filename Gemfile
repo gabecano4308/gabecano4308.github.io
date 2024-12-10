@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 group :jekyll_plugins do
+  gem 'nokogiri'
   gem 'jekyll'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
