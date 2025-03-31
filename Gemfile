@@ -4,7 +4,7 @@ group :jekyll_plugins do
   gem 'nokogiri'
   gem 'jekyll'
   gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
+  # gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from'
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
