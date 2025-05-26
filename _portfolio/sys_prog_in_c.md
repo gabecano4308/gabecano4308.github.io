@@ -2,7 +2,7 @@
 title: "Systems Programming in C"
 ---
 
-## Systems Programming Projects in C for Linux
+## [Systems Programming Projects in C for Linux](https://harvard.simplesyllabus.com/en-US/doc/feulmck5w)
 #### Creator
 
 These projects are available upon request for potential collaborators and hiring managers.
