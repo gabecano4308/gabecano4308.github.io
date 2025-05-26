@@ -8,8 +8,6 @@ redirect_from:
 ---
 
 Hi! My name is Gabe.
-
-About Me
 ======
 
 Over the past four years, I’ve led data science efforts at Deloitte, where I help design and deploy a fraud detection engine used by state SNAP and Medicaid agencies nationwide. My work spanned end-to-end model development, cloud infrastructure design, scalable deployment, client engagement, and team mentorship.
