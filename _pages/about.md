@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Gabriel Cano"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
