@@ -1,8 +1,7 @@
 ---
-title: "LLM Summarizer Flask App"
+title: "LLM Summarizer Flask App (Part 1)"
 date: 2025-05-26
 permalink: /posts/2025-05-26-llm_summarizer_pt1/
-# permalink: /posts/2012/08/blog-post-1/
 # tags:
 #   - cool posts
 #   - category1
