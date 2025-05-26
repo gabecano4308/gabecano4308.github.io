@@ -1,3 +1,7 @@
+---
+title: "LLM Summarizer Web App"
+---
+
 ## [LLM Summarizer Web App](https://github.com/gabecano4308/summarizer-webpage)
 #### Creator
 <br>
