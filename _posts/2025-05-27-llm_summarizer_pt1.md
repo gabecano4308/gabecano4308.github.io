@@ -359,15 +359,15 @@ flask --app llm_app run
 
 Once running, we can go to `http://127.0.0.1:5000` on the browser and paste some text into the chat-box. It should look something like this:
 
-![image](../images/summarize_text_1.png)
+![image](/images/summarize_text_1.png)
 
 Clicking the Summarize button will send a POST request, which will feed the prommpt into the LLM pipeline, store the prompt/summary into SQL, and query all the data in SQL to embed into the webpage. After some load time, here's the new screen:
 
-![image](../images/summarize_text_2.png)
+![image](/images/summarize_text_2.png)
 
 Repeating this process, one can see that the prompt/summary history is maintained across requests by the SQL database:
 
-![image](../images/summarize_text_3.png)
+![image](/images/summarize_text_3.png)
 
 Once the history gets too clogged up, I can press "Clear Chat", which will trigger the `/clear` request and make the screen look the same as it did initially. 
 
