@@ -97,7 +97,7 @@ def create_app(test_config=None):
 
 - `app = Flask(__name__)` creates a Flask app instance, which is the central object that handles requests, config, and more. 
 - `app.config.from_mapping` sets up config values within the app instance that get used later on. 
-    - the `app.instance_path` param inside `DATABASE=os.path.join(app.instance_path, "llm_sumry.sqlite")` is a special path used by Flask for instance-specific files that shouldn't be committed to version control, such as secrets or databases. 
+- the `app.instance_path` param inside `DATABASE=os.path.join(app.instance_path, "llm_sumry.sqlite")` is a special path used by Flask for instance-specific files that shouldn't be committed to version control, such as secrets or databases. 
 - `app.config.from_mapping(test_config)` is helpful when running unit tests -- test config values can be passed in that override the default values assigned earlier. 
 - `app.config.from_pyfile("config.py", silent=True)` assigns config values from config.py (silent param ignores errors). This is helpful when the user has a true secret key that shouldn't be hard-coded into the script. Flask looks for this `config.py` file in the `app.instance_path` mentioned above. 
 
@@ -164,4 +164,3 @@ def init_app(app):
 
 ```
 
-- 
