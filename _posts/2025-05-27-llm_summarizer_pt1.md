@@ -2,15 +2,15 @@
 title: "Flask App for LLM Summarizer (Part 1)"
 date: 2025-05-27
 permalink: /posts/2025-05-27-llm_summarizer_pt1/
-excerpt: In part one (one-sentence summary)...
+excerpt: A walkthrough on how to use Flask along with a SQLite database to host a trained model and track interaction history. 
 tags:
   - Flask
   - Huggingface
   - sqlite
 ---
-<span style="font-size:12px;">Acknowledgment: the structure of this app is inspired by the [tutorial](https://flask.palletsprojects.com/en/stable/tutorial/) on Flask’s main documentation page.</span>
+<span style="font-size:13px;">Acknowledgment: the structure of this app is inspired by the [tutorial](https://flask.palletsprojects.com/en/stable/tutorial/) on Flask’s main documentation page.</span>
 
-Traditional data scientists tend to spend the bulk of their time doing model R&D in Jupyter notebooks, text editors, and the command line. However, there comes a time in data scientists’ careers where they have to demo a model to people who have no idea what any of those tools are. The last thing one should do in this situation is show them a bunch of code that looks like gibberish to their eyes. They want to see a product that gets to the point -- what cool thing can this do for me? Luckily, there are plenty of lightweight web application frameworks designed to make demoing models via the browser easy, with only a basic level of html and css expertise necessary. 
+Traditional data scientists tend to spend the bulk of their time doing model R&D in Jupyter notebooks, text editors, and the command line. However, there comes a time in data scientists’ careers where they have to demo a model to people who have no idea what any of those tools are. The last thing one should do in this situation is show a bunch of code that looks like gibberish to them. They want to see a product that gets to the point -- what cool thing can this do for me? Luckily, there are plenty of lightweight web application frameworks designed to make demoing models via the browser easy, with only a basic level of html and css expertise necessary. 
 
 In this post I’ll focus specifically on the Flask framework to host a HuggingFace document summarization large language model. The app contains a text box where users can paste in text and receive a ~1-paragraph summary of its content. A sqlite database saves the prompts and summaries so that history can be tracked across the session and cleared by the user as needed. 
 
@@ -361,7 +361,7 @@ Once running, we can go to `http://127.0.0.1:5000` on the browser and paste some
 
 ![image](/images/summarize_text_1.png)
 
-Clicking the Summarize button will send a POST request, which will feed the prommpt into the LLM pipeline, store the prompt/summary into SQL, and query all the data in SQL to embed into the webpage. After some load time, here's the new screen:
+Clicking the Summarize button will send a POST request, which will feed the prompt into the LLM pipeline, store the prompt/summary into SQL, and query all the data in SQL to embed into the webpage. After some load time, here's the new screen:
 
 ![image](/images/summarize_text_2.png)
 
