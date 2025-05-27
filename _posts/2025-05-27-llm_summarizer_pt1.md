@@ -8,7 +8,7 @@ tags:
   - Huggingface
   - sqlite
 ---
-Acknowledgment: the structure of this app is inspired by the [tutorial](https://flask.palletsprojects.com/en/stable/tutorial/) on Flask’s main documentation page.
+<span style="font-size:12px;">Acknowledgment: the structure of this app is inspired by the [tutorial](https://flask.palletsprojects.com/en/stable/tutorial/) on Flask’s main documentation page.</span>
 
 Traditional data scientists tend to spend the bulk of their time doing model R&D in Jupyter notebooks, text editors, and the command line. However, there comes a time in data scientists’ careers where they have to demo a model to people who have no idea what any of those tools are. The last thing one should do in this situation is show them a bunch of code that looks like gibberish to their eyes. They want to see a product that gets to the point -- what cool thing can this do for me? Luckily, there are plenty of lightweight web application frameworks designed to make demoing models via the browser easy, with only a basic level of html and css expertise necessary. 
 
