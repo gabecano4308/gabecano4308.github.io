@@ -1,5 +1,5 @@
 ---
-title: "A Script to Easily Locate Local Source Code for Python Modules"
+title: "Easily Locate Local Source Code for Python Modules"
 date: 2025-06-10
 permalink: /posts/2025-06-10-find_mod_path/
 excerpt: How to build a script to locate and classify Python modules, showing practical use cases and step-by-step improvements. 
