@@ -309,6 +309,6 @@ File is a C extension module, human-readable code online.
 
 ```
 
-There are other weird types of modules out there that this script can be expanded to cover, such as frozen modules and namespace packages, but the current categorization checks are a start. Another good feature to add on would be reading modules from a file such as `requirements.txt` as opposed to typing out each one manually. One could also add an option to display the installed module version, the list of enhancements could go on and on. For now, I still find this script useful for quickly finding the location of my local source code, and I hope any readers of this blog do as well! 
+There are other weird types of modules out there that this script can be expanded to cover, such as frozen modules and namespace packages, but the current categorization checks are a start. Another good feature to add on would be reading modules from a file such as `requirements.txt` as opposed to typing out each one manually. One could also add an option to display the installed module version -- the list of potential enhancements goes on and on. For now, I still find this script useful for quickly finding the location of my local source code, and I hope any readers of this blog do as well! 
 
 The full script can be found on my [GitHub page](https://github.com/gabecano4308/find_mod_path/tree/main).
