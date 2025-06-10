@@ -142,17 +142,17 @@ def find_mod_path(mod_name, classify_file=False):
 	if classify_file:
 		path = module.__file__
 		if os.path.basename(path) == "__init__.py":
-			print("File is a package (directory with __init__.py).\n")
+			print(f"{mod_name} is a package (directory with __init__.py).\n")
 		
         # .pyd is essentially the Windows version of .so
 		elif path.endswith(('.so', '.pyd')):
-			print("File is a C extension module, human-readable code online.\n")
+			print(f"{mod_name} is a C extension module, human-readable code online.\n")
 			
 		elif path.endswith(".py"):
-			print("File is a pure python module (.py file)\n")
+			print(f"{mod_name} is a pure python module (.py file)\n")
 			
 		else:
-			print("File type not classified by this program (yet).\n")
+			print(f"{mod_name} type not classified by this program (yet).\n")
 			
 
 if __name__ == "__main__":
@@ -242,17 +242,17 @@ def find_mod_path(mod_name, classify_file=False):
 	if classify_file:
 		path = module.__file__
 		if os.path.basename(path) == "__init__.py":
-			print("File is a package (directory with __init__.py).\n")
+			print(f"{mod_name} is a package (directory with __init__.py).\n")
 		
         # .pyd is essentially the Windows version of .so
 		elif path.endswith(('.so', '.pyd')):
-			print("File is a C extension module, human-readable code online.\n")
+			print(f"{mod_name} is a C extension module, human-readable code online.\n")
 			
 		elif path.endswith(".py"):
-			print("File is a pure python module (.py file)\n")
+			print(f"{mod_name} is a pure python module (.py file)\n")
 			
 		else:
-			print("File type not classified by this program (yet).\n")
+			print(f"{mod_name} type not classified by this program (yet).\n")
 
 
 def find_mod_paths(mod_names, classify_file=False):
