@@ -205,7 +205,7 @@ File is a C extension module, human-readable code online.
 
 ```
 
-One more improvement I could think of is the ability to process a list of modules, which is a fairly simple modification involving a tweak to `argparser` and a `for` loop:
+One more improvement I could think of is the ability to process a list of modules, which is a fairly simple modification involving a tweak to `argparse` and a `for` loop:
 
 ```python
 import importlib
@@ -278,7 +278,7 @@ if __name__ == "__main__":
 	find_mod_paths(args.mod_names, args.classify_file)
 ```
 
-In the above script, I added the `nargs = "+"` param to the first `add_argument()` method. This param tells `argparser` that `mod_names` should accept a list of one or more args (a `*` instead of a `+` is 0 or more args, `?` is 0 or 1 args, any number `N` is exactly that number of args). So if the user entered `find_mod_v3.py numpy pandas sys`, `args.mod_names` would equal `[numpy, pandas, sys]`. When this is passed into `find_mod_paths()`, it simply loops through that list and runs the original `find_mod_path()` function on each element. Here's a demo run:
+In the above script, I added the `nargs = "+"` param to the first `add_argument()` method. This param tells `argparse` that `mod_names` should accept a list of one or more args (a `*` instead of a `+` is 0 or more args, `?` is 0 or 1 args, any number `N` is exactly that number of args). So if the user entered `find_mod_v3.py numpy pandas sys`, `args.mod_names` would equal `[numpy, pandas, sys]`. When this is passed into `find_mod_paths()`, it simply loops through that list and runs the original `find_mod_path()` function on each element. Here's a demo run:
 
 ```bash
 $ python find_mod_v3.py token requests sys math --details
