@@ -6,7 +6,7 @@ excerpt: How to build a script to locate and classify Python modules, showing pr
 tags:
 ---
 
-When working with Python modules, one of the first things I do is google the documentation to understand what their modules and methods do. Oftentimes, this along with some experimentation is enough for my needs. If I want to go deeper, I'll google the source code, which is usually accessible via the library's GitHub page. 
+When working with Python modules, one of the first things I do is google the documentation to understand what their modules and methods do. Oftentimes, this along with some experimentation is enough for my needs. If I want to go deeper, I'll google the source code, which is usually accessible via the module's GitHub page. 
 
 However, there are lots of good reasons to read through the actual source code installed on your machine. For instance, the online source code may be a different version than the code your machine is running (e.g., maybe you installed the latest version a year ago and three updates have happened since then). Also, you can inspect the source code on your machine without an internet connection and even locally experiment by tweaking functionality on certain lines.
 
