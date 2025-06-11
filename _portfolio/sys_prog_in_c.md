@@ -12,7 +12,7 @@ These projects are available upon request for potential collaborators and hiring
 
 - `smsh Shell`: a lightweight shell that can be used in interactive, -c, or script mode, and allows for variable/command substitution, control blocks, and env variables, to name a few features. 
 - `Shared Scratchpad`: client-server architecture where up to seven clients on different machines can type on a centrally hosted scratchpad, each with their own font color. 
-- `Single-Player Pong`: signal-based implementation of classic pong game, where a player begins with three live, time is tracked, and the ball changes speed. 
+- `Single-Player Pong`: signal-based implementation of classic pong game, where a player begins with three lives, time is tracked, and the ball changes speed. 
 - `stty`: print and change terminal characteristics. 
 - `last`: display a list of all users who have logged into the system since the creation of the wtmp logging file. 
 - `more`: interactively view the contents of a text file one screen at a time. 
