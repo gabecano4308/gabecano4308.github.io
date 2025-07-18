@@ -1,8 +1,8 @@
 ---
-title: "# Using Postgres and dbt With an Open Data Philly Dataset "
+title: "Using Postgres and dbt With an Open Data Philly Dataset"
 date: 2025-07-18
 permalink: /posts/2025-07-18-dbt_map_proj/
-excerpt: How to...
+excerpt: How to use dbt and Postgres to transform Philadelphia open data into analytics-ready tables.
 tags:
 ---
 
@@ -439,13 +439,14 @@ Let's query one of the tables to double-check values look okay by first entering
 
 Results look good! Now, I'll check out the fancy documentation that dbt made for me by running 
 `dbt docs generate` followed by `dbt docs serve`. These commands gather the latest metadata and 
-open up a webpage with an interactive DAG visualization and searchable documentation. Here's what 
-exploring the documentation looks like:
+open up a webpage with an interactive DAG visualization and searchable documentation. Here are two 
+screenshots of what the documentation pages look like:
 
-<video width="100%" controls>
-  <source src="screenshots/dbt_ui_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+Mart model page:
+![dbt_docs_mart](/images/dbt_docs_mart.png)
+
+Lineage graph:
+![dbt_docs_dag](/images/dbt_docs_dag.png)
 
 In this walkthrough, I took a simple open data source about free meal sites and used it to demonstrate some key dbt features. While this example is straightforward, it showcases why dbt has become so popular. dbt brings version control, modular code, automated testing, and seamless documentation to analytics workflows. Instead of having a mess of SQL scripts with unclear dependencies, dbt gives you a structured project where transformations are clearly defined, making it easier to maintain data quality and understand how data flow. For larger orgs with a bunch of sources and complex transformations, I can clearly see how these features become even more valuable. 
 
