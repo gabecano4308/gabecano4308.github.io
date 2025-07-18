@@ -1,5 +1,5 @@
 ---
-title: "Using Postgres and dbt With an Open Data Philly Dataset"
+title: "Using Postgres and dbt with an Open Data Philly Dataset"
 date: 2025-07-18
 permalink: /posts/2025-07-18-dbt_map_proj/
 excerpt: How to use dbt and Postgres to transform Philadelphia open data into analytics-ready tables.
