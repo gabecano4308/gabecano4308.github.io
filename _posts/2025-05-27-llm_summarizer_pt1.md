@@ -1,5 +1,5 @@
 ---
-title: "Flask App for LLM Summarizer (Part 1)"
+title: "Flask App for LLM Summarizer"
 date: 2025-05-27
 permalink: /posts/2025-05-27-llm_summarizer_pt1/
 excerpt: A walkthrough on how to use Flask along with a SQLite database to host a trained model and track interaction history. 
@@ -373,4 +373,5 @@ Once the history gets too clogged up, I can press "Clear Chat", which will trigg
 
 This is a lightweight implementation meant to demonstrate how to host a trained model on a Flask webpage with a sql database. It's not the most barebones way to demo a model on a webpage -- for an even easier way with zero html needed, I recommend checking out [streamlit](https://streamlit.io/). 
 
-All the code for this blog can be found in one place on this [GitHub page](https://github.com/gabecano4308/summarizer-webpage), which also includes a directory for unit tests and a `pyproject.toml` build script. There are plenty of enhancements that can be made to this project. I plan to write a follow-up post where I use Docker to build an image of this application and deploy the image on a cloud platform like AWS.
+All the code for this blog can be found in one place on this [GitHub page](https://github.com/gabecano4308/summarizer-webpage), which also includes a directory for unit tests and a `pyproject.toml` build script. There are plenty of enhancements that can be made to this project, including optimizing for speed and deploying the application on a
+cloud platform such as AWS.
